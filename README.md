@@ -1,6 +1,6 @@
 <!-- DOCTOR DOOM CYBER-FORTRESS PROFILE HEADER -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/RaniloJohn/RaniloJohn/main/doom_banner.svg" width="100%" alt="Shizuphrenia Latverian Cyber-Fortress Banner" />
+  <img src="https://raw.githubusercontent.com/RaniloJohn/RaniloJohn/main/doom_banner.svg?v=2.0" width="100%" alt="Shizuphrenia Latverian Cyber-Fortress Banner" />
 </p>
 
 <!-- RETRO CYBER-CONSOLE METADATA BLOCK -->
