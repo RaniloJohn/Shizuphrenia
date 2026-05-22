@@ -3,15 +3,12 @@
   <img src="doom_wave_flipped.svg" width="100%" alt="Shizuphrenia Latverian Cyber-Fortress Banner" />
 </p>
 
-<!-- SIDE-BY-SIDE FLOATING CONTAINER -->
-<div align="left">
-
-  <!-- STATS CARDS FLOATED RIGHT -->
-  <img align="right" src="https://github-readme-stats-one.vercel.app/api?username=RaniloJohn&show_icons=true&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b&v=1" width="400px" alt="RaniloJohn GitHub Stats" />
-  <img align="right" src="https://streak-stats.demolab.com/?user=RaniloJohn&theme=dark&background=090d16&ring=10b981&fire=10b981&currStreakNum=10b981&border=1e293b&v=1" width="400px" alt="RaniloJohn Streak Stats" />
-
-  <!-- RETRO CYBER-CONSOLE METADATA BLOCK -->
-  <pre><code>╔══════════════════════════════════════════════════════════╗
+<!-- SIDE-BY-SIDE LAYOUT -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top" width="50%">
+      <!-- RETRO CYBER-CONSOLE METADATA BLOCK -->
+      <pre>╔══════════════════════════════════════════════════════════╗
 ║ [!] LATVERIAN SYSTEM SECURITY TELEMETRY                  ║
 ╠══════════════════════════════════════════════════════════╣
 ║ [+] IDENTITY   : Ranilo John (Shizuphrenia)              ║
@@ -26,9 +23,16 @@
 ║  └── Platforms     : Hardened Linux, VMWare, GNS3        ║
 ╠══════════════════════════════════════════════════════════╣
 ║ [!] DECREE: "None shall rival the fortress of Doom."     ║
-╚══════════════════════════════════════════════════════════╝</code></pre>
-
-</div>
+╚══════════════════════════════════════════════════════════╝</pre>
+    </td>
+    <td valign="top" width="50%" align="right">
+      <!-- STATS CARDS -->
+      <img src="https://github-readme-stats-one.vercel.app/api?username=RaniloJohn&show_icons=true&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b&v=1" width="400px" alt="RaniloJohn GitHub Stats" />
+      <br/><br/>
+      <img src="https://streak-stats.demolab.com/?user=RaniloJohn&theme=dark&background=090d16&ring=10b981&fire=10b981&currStreakNum=10b981&border=1e293b&v=1" width="400px" alt="RaniloJohn Streak Stats" />
+    </td>
+  </tr>
+</table>
 
 <br clear="all" />
 
