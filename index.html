@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Shizuphrenia // Latverian Cyber-Fortress</title>
+  <meta name="description" content="Personal portfolio of Ranilo John (Shizuphrenia) - Cybersecurity Analyst, Systems Architect, and Networking Specialist. Themed around Doctor Doom.">
+  <meta name="keywords" content="Ranilo John, Shizuphrenia, Cybersecurity, Networking, SOC Operations, Python, Cisco routing, Wazuh, Suricata, Portfolio">
+  <meta name="author" content="Ranilo John">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shizuphrenia // Latverian Cyber-Fortress">
+  <meta property="og:description" content="Explore the security operations, network architecture, and development pipeline of Ranilo John.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cyber Scanline and Grid Overlay -->
+  <div class="scanlines"></div>
+  <div class="grid-overlay"></div>
+  <div class="glow-bg"></div>
+
+  <!-- Main Container -->
+  <div class="mainframe">
+    
+    <!-- Top Command Header -->
+    <header class="mainframe-header">
+      <div class="header-logo">
+        <span class="pulse-indicator"></span>
+        <span class="system-tag">SYS_NAME: SHIZUPHRENIA_CORE</span>
+      </div>
+      <div class="system-status">
+        <div class="status-item"><span class="label">THREAT LEVEL:</span> <span class="val security-low">MINIMAL</span></div>
+        <div class="status-item"><span class="label">SECURE_TUNNEL:</span> <span class="val text-glow">ACTIVE</span></div>
+        <div class="status-item"><span class="label">UPTIME:</span> <span id="uptime" class="val">99.98%</span></div>
+      </div>
+    </header>
+
+    <!-- Main Grid Layout -->
+    <main class="grid-container">
+      
+      <!-- LEFT PANEL: Identity and Terminal Game -->
+      <section class="panel left-panel">
+        
+        <!-- Doom Portrait Shield Card -->
+        <div class="profile-card">
+          <div class="doom-avatar-container">
+            <!-- Hand-crafted Doctor Doom SVG Illustration -->
+            <svg viewBox="0 0 200 220" class="doom-svg" id="doom-mask-svg">
+              <defs>
+                <!-- Metallic Gradients -->
+                <linearGradient id="metal-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#d1d3d4" />
+                  <stop offset="50%" stop-color="#a6a8ab" />
+                  <stop offset="100%" stop-color="#58595b" />
+                </linearGradient>
+                <linearGradient id="metal-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#808285" />
+                  <stop offset="100%" stop-color="#414143" />
+                </linearGradient>
+                <linearGradient id="hood-green" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1b4d3e" />
+                  <stop offset="100%" stop-color="#0f3025" />
+                </linearGradient>
+                <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ffd700" />
+                  <stop offset="100%" stop-color="#b8931a" />
+                </linearGradient>
+                <!-- Glowing Filter -->
+                <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feGaussianBlur stdDeviation="3" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              
+              <!-- Background Hood (Outer Silhouette) -->
+              <path d="M 25,65 Q 15,110 25,160 L 45,190 L 155,190 L 175,160 Q 185,110 175,65 Q 140,15 100,15 Q 60,15 25,65 Z" fill="url(#hood-green)" stroke="#0b241c" stroke-width="2" />
+              
+              <!-- Shadow of Hood Inner Face Space -->
+              <path d="M 52,70 Q 42,110 52,145 Q 62,165 100,170 Q 138,165 148,145 Q 158,110 148,70 Q 120,35 100,35 Q 80,35 52,70 Z" fill="#050e0c" />
+              
+              <!-- Gold Medallions & Chains -->
+              <circle cx="35" cy="192" r="14" fill="url(#gold-grad)" stroke="#8c6d12" stroke-width="2" />
+              <circle cx="35" cy="192" r="7" fill="#8c6d12" />
+              <circle cx="165" cy="192" r="14" fill="url(#gold-grad)" stroke="#8c6d12" stroke-width="2" />
+              <circle cx="165" cy="192" r="7" fill="#8c6d12" />
+              <!-- Hanging Chain Links -->
+              <path d="M 49,192 Q 100,208 151,192" fill="none" stroke="url(#gold-grad)" stroke-width="4" stroke-dasharray="3, 5" stroke-linecap="round" />
+              
+              <!-- DOOM'S METALLIC MASK -->
+              <!-- Forehead plate -->
+              <path d="M 62,80 L 138,80 L 132,98 L 100,106 L 68,98 Z" fill="url(#metal-primary)" stroke="#222" stroke-width="1.5" />
+              <!-- Rivets on forehead -->
+              <circle cx="68" cy="85" r="2.5" fill="#58595b" stroke="#111" stroke-width="0.5" />
+              <circle cx="132" cy="85" r="2.5" fill="#58595b" stroke="#111" stroke-width="0.5" />
+
+              <!-- Left Cheek armor -->
+              <path d="M 68,98 L 73,138 L 88,146 L 100,125 L 100,106 L 68,98 Z" fill="url(#metal-dark)" stroke="#222" stroke-width="1.5" />
+              <!-- Right Cheek armor -->
+              <path d="M 132,98 L 127,138 L 112,146 L 100,125 L 100,106 L 132,98 Z" fill="url(#metal-primary)" stroke="#222" stroke-width="1.5" />
+              
+              <!-- Rivets on Cheeks -->
+              <circle cx="75" cy="118" r="2.5" fill="#58595b" stroke="#111" stroke-width="0.5" />
+              <circle cx="125" cy="118" r="2.5" fill="#58595b" stroke="#111" stroke-width="0.5" />
+
+              <!-- Nose segment -->
+              <path d="M 94,98 L 106,98 L 103,122 L 97,122 Z" fill="url(#metal-primary)" stroke="#222" stroke-width="1" />
+              
+              <!-- Angry Brow Eye Visor Holes -->
+              <polygon points="70,92 92,95 90,102 72,99" fill="#111" />
+              <polygon points="130,92 108,95 110,102 128,99" fill="#111" />
+              
+              <!-- Glowing Green Cybernetic Eyes -->
+              <circle cx="81" cy="97" r="4.5" fill="#39ff14" filter="url(#neon-glow)" class="glow-eye" />
+              <circle cx="81" cy="97" r="1.5" fill="#fff" />
+              <circle cx="119" cy="97" r="4.5" fill="#39ff14" filter="url(#neon-glow)" class="glow-eye" />
+              <circle cx="119" cy="97" r="1.5" fill="#fff" />
+              
+              <!-- Mouth Grate (Iron Mask Grill) -->
+              <path d="M 85,130 L 115,130 L 112,154 L 88,154 Z" fill="#2d3033" stroke="#111" stroke-width="2" />
+              <!-- Slat Vents -->
+              <line x1="90" y1="135" x2="110" y2="135" stroke="#111" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="90" y1="140" x2="110" y2="140" stroke="#111" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="90" y1="145" x2="110" y2="145" stroke="#111" stroke-width="2.5" stroke-linecap="round" />
+              <line x1="92" y1="150" x2="108" y2="150" stroke="#111" stroke-width="2.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          
+          <div class="profile-details">
+            <h1 class="profile-name" id="profile-name">RANILO JOHN</h1>
+            <h2 class="profile-alias" id="profile-alias">// SHIZUPHRENIA</h2>
+            <p class="profile-tagline" id="profile-tagline">Loading profile payload...</p>
+            
+            <div class="social-links">
+              <a href="#" id="github-link" class="social-btn" target="_blank">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GITHUB</span>
+              </a>
+              <a href="#" id="email-link" class="social-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>EMAIL</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cyber Security SOC Terminal / Defense Simulation -->
+        <div class="terminal-widget">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-title">LATVERIA_MAINFRAME_SOC</span>
+            <span class="terminal-port">PORT: 443/TCP</span>
+          </div>
+          <div class="terminal-body" id="terminal-screen">
+            <!-- Active Terminal logs / Hacking Mini-game goes here -->
+            <div class="terminal-output" id="terminal-output">
+              <p class="sys-msg">[Initializing Secure Boot Loader...]</p>
+              <p class="sys-msg">[Kernel integrity verified...]</p>
+              <p class="sys-msg">[Firewall: Suricata Daemon Initialized...]</p>
+              <p class="sys-msg">[Threat Detection: Wazuh Agent Active...]</p>
+              <p class="sys-msg text-alert">WARNING: Foreign probes detected on NetGrid 10.0.0.x!</p>
+              <p class="sys-msg font-bold">// Click "ACTIVATE PORTWALL" below to deploy security protocols.</p>
+            </div>
+          </div>
+          <div class="terminal-controls">
+            <button id="terminal-game-btn" class="terminal-btn btn-glowing">ACTIVATE PORTWALL</button>
+            <div id="game-status-bar" class="game-status hidden">
+              <span>BLOCKED: <strong id="blocked-count">0</strong></span>
+              <span>INTEGRITY: <strong id="system-integrity" class="security-high">100%</strong></span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- RIGHT PANEL: Skills tabs and Spotify integration -->
+      <section class="panel right-panel">
+        
+        <!-- Tabbed Skills Matrix -->
+        <div class="skills-card">
+          <div class="card-header">
+            <div class="header-indicator">
+              <span class="brackets">[//]</span>
+              <h3>SKILLS_MATRIX.db</h3>
+            </div>
+            <div class="skill-tabs" id="skill-tabs-nav">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+          
+          <div class="card-body">
+            <div class="skills-grid" id="skills-grid-container">
+              <!-- Dynamically populated skills cards -->
+              <p class="loading-text">Decrypted nodes loading...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spotify Media Console -->
+        <div class="spotify-card">
+          <div class="spotify-header">
+            <div class="spotify-icon-container">
+              <svg class="spotify-logo-svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="#1DB954" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.893-.98-.336.075-.67-.136-.746-.472-.076-.336.136-.67.472-.746 3.856-.88 7.15-.506 9.822 1.13.295.178.387.563.207.86zm1.225-2.72c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.075-1.182-.413.125-.845-.107-.97-.52-.125-.413.107-.847.52-.97 3.665-1.11 8.234-.57 11.34 1.34.367.227.487.708.26 1.073zm.105-2.822c-.273.447-.857.595-1.304.32-3.176-1.896-8.407-2.07-11.454-1.144-.51.154-1.045-.137-1.2-.647-.154-.51.137-1.045.647-1.2 3.626-1.1 9.4-1.002 13.067 1.18.447.268.595.85.322 1.304z"/>
+              </svg>
+              <span class="widget-label">LIVE_BROADCAST: SPOTIFY</span>
+            </div>
+            <div id="spotify-presence-indicator" class="presence-indicator offline">
+              <span class="presence-dot"></span>
+              <span id="presence-text" class="presence-text">OFFLINE</span>
+            </div>
+          </div>
+          
+          <div class="spotify-body">
+            <!-- Vinyl & Audio Visualizer Container -->
+            <div class="player-left">
+              <div class="vinyl-container">
+                <div class="vinyl-record" id="spotify-record">
+                  <div class="vinyl-center" id="spotify-album-center" style="background-image: url('https://i.scdn.co/image/ab67616d0000b273b5df54db22dbfd06f4777590');"></div>
+                </div>
+              </div>
+              
+              <!-- Audio Visualizer Waves -->
+              <div class="audio-waves" id="audio-visualizer">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+              </div>
+            </div>
+            
+            <!-- Song Information -->
+            <div class="player-right">
+              <div class="track-details">
+                <h4 id="spotify-track-title" class="track-title text-glow">All Caps</h4>
+                <p id="spotify-track-artist" class="track-artist">Madvillain, MF DOOM</p>
+                <p id="spotify-track-album" class="track-album">Madvillainy</p>
+              </div>
+              
+              <!-- Progress Bar -->
+              <div class="progress-bar-container">
+                <div class="progress-bar" id="spotify-progress-bar" style="width: 0%;"></div>
+              </div>
+              <div class="track-times">
+                <span id="spotify-time-elapsed">0:00</span>
+                <span id="spotify-time-total">2:10</span>
+              </div>
+              
+              <!-- Simple Controller Overlay -->
+              <div class="player-controls">
+                <button id="spotify-prev-btn" class="player-ctrl-btn" title="Previous Track">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line></svg>
+                </button>
+                <button id="spotify-play-btn" class="player-ctrl-btn play-pause-btn" title="Play/Pause">
+                  <svg id="spotify-play-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <svg id="spotify-pause-icon" class="hidden" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                </button>
+                <button id="spotify-next-btn" class="player-ctrl-btn" title="Next Track">
+                  <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="spotify-footer">
+            <span class="spotify-notice">*Connected via Lanyard. Shows Discord activity. Fallback active.</span>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mainframe-footer">
+      <div class="footer-left">
+        <span class="tag">LATVERIAN SECURITY CODE // SHZ_V4.2.1</span>
+      </div>
+      <div class="footer-right">
+        <span>&copy; 2026 RANILO JOHN. ALL RIGHTS SECURED UNDER DOOM'S DECREE.</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Audio elements for feedback (Optional) -->
+  <audio id="sound-laser" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav" preload="auto"></audio>
+  <audio id="sound-error" src="https://assets.mixkit.co/active_storage/sfx/953/953-84.wav" preload="auto"></audio>
+  
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
