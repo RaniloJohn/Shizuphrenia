@@ -7,36 +7,26 @@
 <div align="left">
 
   <!-- STATS CARDS FLOATED RIGHT -->
-  <img align="right" src="https://github-readme-stats-git.vercel.app/api?username=RaniloJohn&show_icons=true&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b&v=1" width="400px" alt="RaniloJohn GitHub Stats" />
+  <img align="right" src="https://github-readme-stats-one.vercel.app/api?username=RaniloJohn&show_icons=true&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b&v=1" width="400px" alt="RaniloJohn GitHub Stats" />
   <img align="right" src="https://streak-stats.demolab.com/?user=RaniloJohn&theme=dark&background=090d16&ring=10b981&fire=10b981&currStreakNum=10b981&border=1e293b&v=1" width="400px" alt="RaniloJohn Streak Stats" />
 
   <!-- RETRO CYBER-CONSOLE METADATA BLOCK -->
-  ```text
-#.*.+   #.*  ~ *  //  #.*.+  #.*"
-     /)    /)
-   (// . <// )'))         + , .-
-  .-u--u--------+ + .
-  | .- 🤖 identity      : Ranilo John (alias: Shizuphrenia)
-  | :    *   system_status : ACTIVE DEFENSE MATRIX
-  | :   🟢  clearance_lv  : MAXIMUM (LATVERIAN HIGH RULER)
-  | :    ''  directive     : "Establish order over the chaos of this network grid."
-  | :
-  | * primary_domain : Cybersecurity & SOC Operations
-  | :                  - Threat Detection (Wazuh, Suricata)
-  | :                  - Heuristic Analysis, SOC Operations
-  | :                  - Vulnerability Assessment, Security Standards
-  | :
-  | * network_grid   : Cisco Routing & Switching (VLANs, OSPF, VTP)
-  | :                  - Subnetting, STP, Packet Analysis (Wireshark)
-  | :
-  | * logic_cores    : Python, Java, HTML, CSS
-  | :
-  | * platforms      : Linux Administration (Ubuntu, Kali), VMware, GNS3, AutoCAD 3D
-  | :
-  | .- \ decree : "None shall rival the cyber-fortress matrix of Doom."
-  | |     *  +.
-  +-+------ #.*.+ ----
-  ```
+  <pre><code>╔══════════════════════════════════════════════════════════╗
+║ [!] LATVERIAN SYSTEM SECURITY TELEMETRY                  ║
+╠══════════════════════════════════════════════════════════╣
+║ [+] IDENTITY   : Ranilo John (Shizuphrenia)              ║
+║ [*] STATUS     : ACTIVE THREAT DEFENSE MATRIX            ║
+║ [^] CLEARANCE  : MAXIMUM HIGH RULER LEVEL                ║
+║ [>] DIRECTIVE  : "Establish order over network chaos."   ║
+╠══════════════════════════════════════════════════════════╣
+║ [ SYSTEMS OPERATIONS TELEMETRY ]                         ║
+║  ├── Cybersecurity : Wazuh SIEM, Suricata IDS, SOC       ║
+║  ├── Networking    : Cisco CCNA, VLANs, OSPF, STP        ║
+║  ├── Dev Engines   : Python, Java, HTML, CSS, Shell      ║
+║  └── Platforms     : Hardened Linux, VMWare, GNS3        ║
+╠══════════════════════════════════════════════════════════╣
+║ [!] DECREE: "None shall rival the fortress of Doom."     ║
+╚══════════════════════════════════════════════════════════╝</code></pre>
 
 </div>
 
@@ -82,7 +72,7 @@
 ## 📊 Latverian Language Diagnostics
 
 <p align="center">
-  <img src="https://github-readme-stats-git.vercel.app/api/top-langs/?username=RaniloJohn&layout=compact&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b&v=1" width="60%" alt="RaniloJohn Top Languages" />
+  <img src="https://github-readme-stats-one.vercel.app/api/top-langs/?username=RaniloJohn&layout=compact&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b&v=1" width="60%" alt="RaniloJohn Top Languages" />
 </p>
 
 ---
