@@ -974,6 +974,78 @@ body {
 }
 
 /* ==========================================================================
+   CONTRIBUTIONS / NETWORK ACTIVITY SECTION
+   ========================================================================== */
+
+.activity-section {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.activity-card {
+  width: 100%;
+}
+
+.activity-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.github-graph-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Webkit scrollbar for the graph scrolling on small screens */
+.github-graph-wrapper::-webkit-scrollbar {
+  height: 4px;
+}
+.github-graph-wrapper::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 2px;
+}
+.github-graph-wrapper::-webkit-scrollbar-thumb:hover {
+  background: var(--color-emerald);
+}
+
+.github-graph-img {
+  max-width: 100%;
+  height: auto;
+  min-width: 820px; /* Force minimum width to prevent squash */
+  image-rendering: -webkit-optimize-contrast;
+  /* Cybernetic color inverter filter:
+     Converts the default white/light-grey background and squares into custom dark-grey blocks,
+     while preserving and saturating our emerald green commits! */
+  filter: invert(1) hue-rotate(180deg) saturate(1.6) brightness(0.65) contrast(1.25);
+}
+
+.graph-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-secondary);
+}
+
+.legend-box {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.legend-box.level-0 { background-color: #1a221d; }
+.legend-box.level-1 { background-color: rgba(16, 185, 129, 0.25); }
+.legend-box.level-2 { background-color: rgba(16, 185, 129, 0.5); }
+.legend-box.level-3 { background-color: rgba(16, 185, 129, 0.75); }
+.legend-box.level-4 { background-color: #10b981; }
+
+/* ==========================================================================
    RESPONSIVE LAYOUT MEDIA QUERIES
    ========================================================================== */
 
