@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="100%" height="100%" style="background:#090d16; font-family:'JetBrains Mono', monospace;">
+  <defs>
+    <!-- Glowing Green Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Metallic Face Gradient -->
+    <linearGradient id="metal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="50%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Hood Gradient (Doom Green) -->
+    <linearGradient id="hood-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.07" />
+      <circle cx="40" cy="40" r="1" fill="#10b981" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="1000" height="320" fill="url(#grid)" />
+
+  <!-- Diagonal Tech Accents -->
+  <path d="M 0 280 L 300 280 L 340 320 L 0 320 Z" fill="#10b981" fill-opacity="0.03" />
+  <path d="M 1000 40 L 700 40 L 660 0 L 1000 0 Z" fill="#10b981" fill-opacity="0.03" />
+  <line x1="0" y1="280" x2="300" y2="280" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.3" />
+  <line x1="300" y1="280" x2="340" y2="320" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.3" />
+  
+  <line x1="1000" y1="40" x2="700" y2="40" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.3" />
+  <line x1="700" y1="40" x2="660" y2="0" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <!-- Target Sight HUD -->
+  <circle cx="160" cy="160" r="140" fill="none" stroke="#10b981" stroke-width="0.75" stroke-opacity="0.1" stroke-dasharray="10 5" />
+  <circle cx="160" cy="160" r="115" fill="none" stroke="#10b981" stroke-width="0.5" stroke-opacity="0.15" />
+  <path d="M 160 10 L 160 40 M 160 280 L 160 310 M 10 160 L 40 160 M 280 160 L 310 160" stroke="#10b981" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- ================= DOOM MASK ART ================= -->
+  <g transform="translate(10, 0)">
+    <!-- Hood Shadow -->
+    <path d="M 80 40 Q 150 20 220 40 L 250 150 Q 250 250 150 290 Q 50 250 50 150 Z" fill="#021f17" opacity="0.6" />
+
+    <!-- Hood Outline -->
+    <path d="M 75 45 Q 150 15 225 45 Q 260 140 245 230 Q 220 285 150 295 Q 80 285 55 230 Q 40 140 75 45 Z" fill="url(#hood-grad)" stroke="#047857" stroke-width="3" />
+    
+    <!-- Inner Face Shadow -->
+    <path d="M 90 80 Q 150 70 210 80 Q 230 150 225 210 Q 200 260 150 270 Q 100 260 75 210 Q 70 150 90 80 Z" fill="#020617" />
+
+    <!-- Metal Mask Faceplate -->
+    <path d="M 95 90 Q 150 80 205 90 Q 215 130 215 180 Q 210 240 150 255 Q 90 240 85 180 Q 85 130 95 90 Z" fill="url(#metal-grad)" stroke="#475569" stroke-width="2" />
+
+    <!-- Forehead Seam and Rivets -->
+    <line x1="150" y1="80" x2="150" y2="125" stroke="#1e293b" stroke-width="2.5" />
+    <circle cx="150" cy="92" r="2.5" fill="#94a3b8" />
+    <circle cx="150" cy="115" r="2.5" fill="#94a3b8" />
+
+    <!-- Brow Arc -->
+    <path d="M 100 120 Q 150 100 200 120" fill="none" stroke="#1e293b" stroke-width="4.5" stroke-linecap="round" />
+    <path d="M 105 125 Q 150 108 195 125" fill="none" stroke="#64748b" stroke-width="1.5" />
+
+    <!-- Visor Slits / Eyes (Glowing Green) -->
+    <!-- Left Eye -->
+    <path d="M 107 136 L 138 139 L 135 147 L 112 144 Z" fill="#022c22" stroke="#065f46" stroke-width="1.5" />
+    <path d="M 112 139 L 134 141 L 132 144 L 115 142 Z" fill="#00ffcc" filter="url(#glow)" />
+    <!-- Right Eye -->
+    <path d="M 193 136 L 162 139 L 165 147 L 188 144 Z" fill="#022c22" stroke="#065f46" stroke-width="1.5" />
+    <path d="M 188 139 L 166 141 L 168 144 L 185 142 Z" fill="#00ffcc" filter="url(#glow)" />
+
+    <!-- Nose Guard/Plate -->
+    <path d="M 140 142 L 160 142 L 165 175 L 150 190 L 135 175 Z" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <line x1="150" y1="142" x2="150" y2="185" stroke="#0f172a" stroke-width="1.5" />
+
+    <!-- Mouth Vent / Grille (Doom Signature Vents) -->
+    <rect x="125" y="198" width="50" height="22" rx="3" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <!-- Vent Slots -->
+    <line x1="133" y1="202" x2="133" y2="216" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8" filter="url(#glow)" />
+    <line x1="141" y1="202" x2="141" y2="216" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8" filter="url(#glow)" />
+    <line x1="150" y1="202" x2="150" y2="216" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8" filter="url(#glow)" />
+    <line x1="159" y1="202" x2="159" y2="216" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8" filter="url(#glow)" />
+    <line x1="167" y1="202" x2="167" y2="216" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8" filter="url(#glow)" />
+
+    <!-- Cheek Rivets -->
+    <circle cx="102" cy="180" r="2.5" fill="#94a3b8" />
+    <circle cx="198" cy="180" r="2.5" fill="#94a3b8" />
+    <circle cx="112" cy="215" r="2.5" fill="#94a3b8" />
+    <circle cx="188" cy="215" r="2.5" fill="#94a3b8" />
+  </g>
+
+  <!-- ================= CONSOLE HUD / TEXT ================= -->
+  <!-- Status Indicator -->
+  <g transform="translate(360, 60)">
+    <!-- Tech Corner Accents -->
+    <path d="M -10 25 L -10 -5 L 30 -5" fill="none" stroke="#10b981" stroke-width="2" stroke-opacity="0.6" />
+    <rect x="0" y="5" width="12" height="12" fill="#10b981" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </rect>
+    
+    <text x="24" y="16" fill="#10b981" font-size="14" font-weight="bold" letter-spacing="2" filter="url(#glow)">SECURE NODE: ONLINE</text>
+    
+    <!-- Title -->
+    <text x="0" y="52" fill="#ffffff" font-size="28" font-weight="900" letter-spacing="1">SHIZUPHRENIA</text>
+    <text x="0" y="80" fill="#10b981" font-size="15" font-weight="bold" letter-spacing="3" opacity="0.8">LATVERIAN CYBER-FORTRESS</text>
+
+    <!-- Divider Line -->
+    <line x1="0" y1="95" x2="560" y2="95" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.3" />
+    <rect x="0" y="94" width="60" height="3" fill="#10b981" filter="url(#glow)" />
+
+    <!-- Metrics -->
+    <text x="0" y="125" fill="#64748b" font-size="12">HOST: <tspan fill="#94a3b8">DOOM-MAINFRAME-V3</tspan></text>
+    <text x="240" y="125" fill="#64748b" font-size="12">OS: <tspan fill="#94a3b8">KALI-HARDENED-SYS</tspan></text>
+    <text x="440" y="125" fill="#64748b" font-size="12">NET: <tspan fill="#10b981">DMZ ACTIVE</tspan></text>
+
+    <text x="0" y="150" fill="#64748b" font-size="12">THREAT SCANNER: <tspan fill="#10b981" font-weight="bold">WAZUH.AGENT.RUNNING</tspan></text>
+    <text x="340" y="150" fill="#64748b" font-size="12">FIREWALL: <tspan fill="#10b981">SURICATA_ENGAGED</tspan></text>
+
+    <!-- Terminal Command Line Mockup -->
+    <g transform="translate(0, 175)">
+      <rect x="0" y="0" width="560" height="42" rx="4" fill="#020617" stroke="#1e293b" stroke-width="1" />
+      <text x="15" y="25" fill="#38bdf8" font-size="12">shizuphrenia@latveria<tspan fill="#ffffff">:</tspan><tspan fill="#a855f7">~</tspan><tspan fill="#ffffff">$</tspan> <tspan fill="#10b981">sudo threat-detect --mode=active-block</tspan></text>
+      <circle cx="540" cy="21" r="4" fill="#10b981" filter="url(#glow)">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <!-- Bottom Decree Footer -->
+    <text x="0" y="245" fill="#475569" font-style="italic" font-size="11">"None shall rival the cybersecurity matrix of Doom."</text>
+  </g>
+
+  <!-- Frame border brackets -->
+  <path d="M 12 12 L 12 40 M 12 12 L 40 12" fill="none" stroke="#10b981" stroke-width="2" stroke-opacity="0.4" />
+  <path d="M 988 12 L 988 40 M 988 12 L 960 12" fill="none" stroke="#10b981" stroke-width="2" stroke-opacity="0.4" />
+  <path d="M 12 308 L 12 280 M 12 308 L 40 308" fill="none" stroke="#10b981" stroke-width="2" stroke-opacity="0.4" />
+  <path d="M 988 308 L 988 280 M 988 308 L 960 308" fill="none" stroke="#10b981" stroke-width="2" stroke-opacity="0.4" />
+</svg>

@@ -1,83 +1,82 @@
-# 🛡️ SHIZUPHRENIA // LATVERIAN CYBER-FORTRESS
+<!-- DOCTOR DOOM CYBER-FORTRESS PROFILE HEADER -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/RaniloJohn/RaniloJohn/main/doom_banner.svg" width="100%" alt="Shizuphrenia Latverian Cyber-Fortress Banner" />
+</p>
 
+<!-- RETRO CYBER-CONSOLE METADATA BLOCK -->
+```text
+#.*.+   #.*  ~ *  //  #.*.+  #.*"
+     /)    /)
+   (// . <// )'))         + , .-
+  .-u--u--------+ + .
+  | .- 🤖 identity      : Ranilo John (alias: Shizuphrenia)
+  | :    *   system_status : ACTIVE DEFENSE MATRIX
+  | :   🟢  clearance_lv  : MAXIMUM (LATVERIAN HIGH RULER)
+  | :    ''  directive     : "Establish order over the chaos of this network grid."
+  | :
+  | * primary_domain : Cybersecurity & SOC Operations
+  | :                  - Threat Detection (Wazuh, Suricata)
+  | :                  - Heuristic Analysis, SOC Operations
+  | :                  - Vulnerability Assessment, Security Standards
+  | :
+  | * network_grid   : Cisco Routing & Switching (VLANs, OSPF, VTP)
+  | :                  - Subnetting, STP, Packet Analysis (Wireshark)
+  | :
+  | * logic_cores    : Python, Java, HTML, CSS
+  | :
+  | * platforms      : Linux Administration (Ubuntu, Kali), VMware, GNS3, AutoCAD 3D
+  | :
+  | .- \ decree : "None shall rival the cyber-fortress matrix of Doom."
+  | |     *  +.
+  +-+------ #.*.+ ----
 ```
-              ┌────────────────────────────────────────────────┐
-              │  MAIN MODULE: SECURE NETWORK DEFENSE CORE      │
-              │  OBJECTIVE: TOTAL DIGITAL ENVELOPE PROTECTION  │
-              │  STATUS: READY FOR COMMAND                     │
-              └────────────────────────────────────────────────┘
-```
-
-Welcome to the digital command center of **Ranilo John (alias: Shizuphrenia)**. Fusing the calculated systems engineering of **Doctor Doom** with robust **Cybersecurity operations**, **Networking architectures**, and **Automated programming**. 
 
 ---
 
-## ⚡ Technical Arsenals
+## ⚡ Arsenal Systems
 
-### 🔒 Cybersecurity & SOC Operations
-*   **Threat Detection:** Rule generation & telemetry analysis with **Wazuh** & **Suricata**.
-*   **Security Command:** Incident analysis, log correlation, and Heuristic behavioral threat hunting.
-*   **Defense Audits:** Vulnerability Assessment, compliance scanning, and remediation workflows.
-
-### 🔌 Computer Networking
-*   **Routing & Switching:** Enterprise-grade VLANs, OSPF routing, VTP trunking, and Spanning Tree Protocol (STP) configuration.
-*   **Traffic Diagnosis:** Deep packet inspection, decoding protocols, and threat tracing using **Wireshark**.
-*   **Subnetting:** Efficient IP addressing hierarchy, Variable-Length Subnet Masking (VLSM).
-
-### 💻 Code Logic
-*   **Python:** Exploit scripting, custom network scrapers, security automation tools.
-*   **Java:** Object-Oriented software architectures, high-integrity backends.
-*   **HTML & CSS:** Custom UI construction, responsive responsive grids, modern animations.
-
-### ⚙️ Systems & Platforms
-*   **Linux Power User:** OS hardening, administration (Debian, Ubuntu, security tooling on Kali Linux).
-*   **Lab Infrastructure:** Multi-host hypervisors using VMWare Workstation.
-*   **Simulation Environments:** Large-scale virtual routing topologies modeled inside GNS3.
-*   **Engineering Drafts:** Mechanical layouts and blueprints designed in AutoCAD 3D Modeling.
-
----
-
-## 🖥️ Live Cyber-Fortress Landing Page
-
-This repository contains a premium single-page portfolio website that showcases these skills in a high-fidelity Doctor Doom aesthetic.
-
-### 🌟 Key Features
-1.  **Doctor Doom Cyber Mask:** A custom-crafted, responsive vector SVG mask in dark emerald and steel gradients with glowing indicator eyes.
-2.  **Lanyard Spotify Integration:** A live cassette/vinyl player that connects via WebSockets to Discord rich presence, pulling the track you are currently playing.
-3.  **Active SOC Threat Defuser Game:** An interactive retro computer terminal where visitors must deploy Wazuh/Suricata blocklists to save Latveria's Mainframe from DDoS, brute-force attacks, and SQL injections!
-4.  **Skills Matrix db Board:** Responsive, dynamic tabs to inspect different layers of your engineering skill set.
+<p align="left">
+  <!-- Cybersecurity -->
+  <img src="https://img.shields.io/badge/Cybersecurity-10B981?style=for-the-badge&logo=shields-dot-io&logoColor=white" />
+  <img src="https://img.shields.io/badge/Wazuh-1E293B?style=for-the-badge&logo=wazuh&logoColor=10B981" />
+  <img src="https://img.shields.io/badge/Suricata-10B981?style=for-the-badge&logo=suricata&logoColor=white" />
+  <img src="https://img.shields.io/badge/Wireshark-1E293B?style=for-the-badge&logo=wireshark&logoColor=10B981" />
+  
+  <br/>
+  
+  <!-- Networking -->
+  <img src="https://img.shields.io/badge/Cisco_Networking-10B981?style=for-the-badge&logo=cisco&logoColor=white" />
+  <img src="https://img.shields.io/badge/GNS3-1E293B?style=for-the-badge&logo=gns3&logoColor=10B981" />
+  <img src="https://img.shields.io/badge/VMWare-10B981?style=for-the-badge&logo=vmware&logoColor=white" />
+  
+  <br/>
+  
+  <!-- Programming / Systems -->
+  <img src="https://img.shields.io/badge/Python-1E293B?style=for-the-badge&logo=python&logoColor=10B981" />
+  <img src="https://img.shields.io/badge/Java-10B981?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux_Administration-1E293B?style=for-the-badge&logo=linux&logoColor=10B981" />
+  <img src="https://img.shields.io/badge/AutoCAD_3D-10B981?style=for-the-badge&logo=autodesk&logoColor=white" />
+</p>
 
 ---
 
-## ⚙️ Configuration & Deployment Guide
+## 🎵 Live Audio Comm Transmission (Spotify)
 
-### 1. Connecting Your Spotify Player (via Lanyard)
-The Spotify player on the landing page connects to **Lanyard API** to display what you are playing on Discord.
-1.  Join the Lanyard Discord Server (if you want your status monitored): [Lanyard Discord](https://discord.gg/lanyard).
-2.  Find your numeric **Discord User ID** (Enable Developer Mode in Discord, right-click your profile picture -> "Copy User ID").
-3.  Open [config.js](file:///d:/Projects/github/config.js) in this repo.
-4.  Replace `"YOUR_DISCORD_ID_HERE"` with your copied Discord User ID:
-    ```javascript
-    const CONFIG = {
-      profile: {
-        ...
-        discordId: "78239847192837198", // Example Discord User ID
-      },
-      ...
-    ```
-5.  Save and commit!
-
-### 2. Hosting For Free (GitHub Pages)
-Since the landing page is written in pure vanilla HTML, CSS, and JS, you can deploy it in seconds using **GitHub Pages**:
-1.  Push this codebase to your `RaniloJohn/Shizuphrenia` repository.
-2.  Go to your repository on GitHub.
-3.  Navigate to **Settings** (tab at the top) -> **Pages** (in the left sidebar).
-4.  Under **Build and deployment**, set the source to **Deploy from a branch**.
-5.  Select your branch (usually `main`) and folder (`/root`).
-6.  Click **Save**.
-7.  Within 1-2 minutes, GitHub will publish your portfolio at: `https://RaniloJohn.github.io/Shizuphrenia/`
+<p align="center">
+  <a href="https://discord.com/users/1092973630683619399">
+    <img src="https://lanyard.cnrad.dev/api/1092973630683619399?theme=dark&bg=090d16&titleColor=ffffff&textColor=94a3b8&iconColor=10b981&borderColor=10b981" alt="Spotify Live Status" width="400" />
+  </a>
+</p>
 
 ---
 
-## 📜 Decree of Doom
-> *"Imagine! I, Doom, ruler of Latveria, owner of the most advanced technology in the universe, am about to establish order over the chaos of this network grid."*
+## 📊 Latverian System Diagnostics (GitHub Stats)
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=RaniloJohn&show_icons=true&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b" width="48%" alt="RaniloJohn GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=RaniloJohn&theme=dark&background=090d16&ring=10b981&fire=10b981&currStreakNum=10b981&border=1e293b" width="48%" alt="RaniloJohn Streak Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RaniloJohn&layout=compact&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b" width="60%" alt="RaniloJohn Top Languages" />
+</p>
