@@ -1,91 +1,93 @@
-<!-- DOCTOR DOOM CYBER-FORTRESS PROFILE HEADER -->
 <p align="center">
-  <img src="doom_wave_flipped.svg" width="100%" alt="Shizuphrenia Latverian Cyber-Fortress Banner" />
+  <img src="assets/sleeve.svg" width="100%" alt="SHIZUPHRENIA — Operation: Doomsday. Security operations and network engineering." />
 </p>
 
-<!-- SIDE-BY-SIDE LAYOUT -->
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <td valign="top" width="50%">
-      <!-- RETRO CYBER-CONSOLE METADATA BLOCK -->
-      <pre>╔══════════════════════════════════════════════════════════╗
-║ [!] LATVERIAN SYSTEM SECURITY TELEMETRY                  ║
-╠══════════════════════════════════════════════════════════╣
-║ [+] IDENTITY   : Ranilo John (Shizuphrenia)              ║
-║ [*] STATUS     : ACTIVE THREAT DEFENSE MATRIX            ║
-║ [^] CLEARANCE  : MAXIMUM HIGH RULER LEVEL                ║
-║ [>] DIRECTIVE  : "Establish order over network chaos."   ║
-╠══════════════════════════════════════════════════════════╣
-║ [ SYSTEMS OPERATIONS TELEMETRY ]                         ║
-║  ├── Cybersecurity : Wazuh SIEM, Suricata IDS, SOC       ║
-║  ├── Networking    : Cisco CCNA, VLANs, OSPF, STP        ║
-║  ├── Dev Engines   : Python, Java, HTML, CSS, Shell      ║
-║  └── Platforms     : Hardened Linux, VMWare, GNS3        ║
-╠══════════════════════════════════════════════════════════╣
-║ [!] DECREE: "None shall rival the fortress of Doom."     ║
-╚══════════════════════════════════════════════════════════╝</pre>
-    </td>
-    <td valign="top" width="50%" align="right">
-      <!-- STATS CARDS -->
-      <img src="https://github-readme-stats-one.vercel.app/api?username=RaniloJohn&show_icons=true&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b&v=1" width="400px" alt="RaniloJohn GitHub Stats" />
-      <br/><br/>
-      <img src="https://streak-stats.demolab.com/?user=RaniloJohn&theme=dark&background=090d16&ring=10b981&fire=10b981&currStreakNum=10b981&border=1e293b&v=1" width="400px" alt="RaniloJohn Streak Stats" />
-    </td>
-  </tr>
+<table>
+<tr>
+<td width="52%" valign="top">
+
+<pre>
+        LINER NOTES / SIDE A
+  ----------------------------------------
+  ARTIST     Ranilo John
+  ALIAS      Shizuphrenia
+  BILLING    Security analyst, network eng.
+  PRESSED IN Hardened Linux, VMware, GNS3
+  ----------------------------------------
+  "The villain gets the mask. The analyst
+   gets the packet capture. Same job:
+   watch everybody, say nothing, and know
+   the network better than it knows itself."
+  ----------------------------------------
+  ENGINEERED Wazuh . Suricata . Wireshark
+  MIXED ON   Cisco IOS . OSPF . VLAN . STP
+  WRITTEN IN Python . Java . Bash
+  ----------------------------------------
+  RUN OUT GROOVE:  ALL CAPS, NO EXCEPTIONS
+</pre>
+
+</td>
+<td width="48%" valign="top">
+
+<img src="https://github-readme-stats-one.vercel.app/api?username=RaniloJohn&show_icons=true&hide_border=true&bg_color=0F0E0C&title_color=C9922B&icon_color=C9922B&text_color=A29A85&ring_color=C9922B" width="100%" alt="GitHub stats" />
+
+<img src="https://streak-stats.demolab.com/?user=RaniloJohn&hide_border=true&background=0F0E0C&ring=C9922B&fire=A93B26&currStreakNum=E9E2CF&sideNums=E9E2CF&currStreakLabel=C9922B&sideLabels=A29A85&dates=7C7A72" width="100%" alt="Commit streak" />
+
+</td>
+</tr>
 </table>
 
-<br clear="all" />
+---
+
+## TRACKLIST
+
+Everything below is a thing I actually do, not a badge I found. No runtimes, no invented percentages.
+
+**SIDE A — DEFENSE**
+
+| # | TRACK | PRODUCED WITH |
+|---|-------|---------------|
+| A1 | Threat detection & alert triage | Wazuh, Suricata |
+| A2 | SOC operations and incident write-up | Alert pipelines, IR notes |
+| A3 | Behavioural anomaly hunting | Log correlation, baselining |
+| A4 | Vulnerability assessment | Scanning, remediation tracking |
+
+**SIDE B — THE NETWORK**
+
+| # | TRACK | PRODUCED WITH |
+|---|-------|---------------|
+| B1 | Routing & switching | Cisco IOS, VLANs, VTP, OSPF |
+| B2 | Subnetting & loop prevention | IP planning, STP |
+| B3 | Packet analysis | Wireshark, deep packet inspection |
+| B4 | Lab topologies | GNS3, VMware Workstation |
+
+**SIDE C — THE CODE**
+
+| # | TRACK | PRODUCED WITH |
+|---|-------|---------------|
+| C1 | Security tooling & automation | Python |
+| C2 | Systems logic | Java |
+| C3 | Host administration | Ubuntu, Kali, shell |
+| C4 | Interfaces & drafting | HTML, CSS, AutoCAD 3D |
 
 ---
 
-## ⚡ Arsenal Systems
-
-<p align="left">
-  <!-- Cybersecurity -->
-  <img src="https://img.shields.io/badge/Cybersecurity-10B981?style=for-the-badge&logo=shields-dot-io&logoColor=white" />
-  <img src="https://img.shields.io/badge/Wazuh-1E293B?style=for-the-badge&logo=wazuh&logoColor=10B981" />
-  <img src="https://img.shields.io/badge/Suricata-10B981?style=for-the-badge&logo=suricata&logoColor=white" />
-  <img src="https://img.shields.io/badge/Wireshark-1E293B?style=for-the-badge&logo=wireshark&logoColor=10B981" />
-  
-  <br/>
-  
-  <!-- Networking -->
-  <img src="https://img.shields.io/badge/Cisco_Networking-10B981?style=for-the-badge&logo=cisco&logoColor=white" />
-  <img src="https://img.shields.io/badge/GNS3-1E293B?style=for-the-badge&logo=gns3&logoColor=10B981" />
-  <img src="https://img.shields.io/badge/VMWare-10B981?style=for-the-badge&logo=vmware&logoColor=white" />
-  
-  <br/>
-  
-  <!-- Programming / Systems -->
-  <img src="https://img.shields.io/badge/Python-1E293B?style=for-the-badge&logo=python&logoColor=10B981" />
-  <img src="https://img.shields.io/badge/Java-10B981?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux_Administration-1E293B?style=for-the-badge&logo=linux&logoColor=10B981" />
-  <img src="https://img.shields.io/badge/AutoCAD_3D-10B981?style=for-the-badge&logo=autodesk&logoColor=white" />
-</p>
-
----
-
-## 📊 Latverian Grid Contributions
+## THE CRATE
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/10b981/RaniloJohn?v=1" alt="RaniloJohn's GitHub Contributions" />
+  <img src="https://github-readme-stats-one.vercel.app/api/top-langs/?username=RaniloJohn&layout=compact&hide_border=true&bg_color=0F0E0C&title_color=C9922B&text_color=A29A85" width="52%" alt="Most-used languages" />
 </p>
 
 ---
 
-## 📊 Latverian Language Diagnostics
-
-<p align="center">
-  <img src="https://github-readme-stats-one.vercel.app/api/top-langs/?username=RaniloJohn&layout=compact&theme=dark&bg_color=090d16&title_color=10b981&icon_color=10b981&text_color=94a3b8&border_color=1e293b&v=1" width="60%" alt="RaniloJohn Top Languages" />
-</p>
-
----
-
-## 🎵 Live Audio Comm Transmission (Spotify)
+## NOW SPINNING
 
 <p align="center">
   <a href="https://discord.com/users/1092973630683619399">
-    <img src="https://lanyard.cnrad.dev/api/1092973630683619399?theme=dark&bg=090d16&titleColor=ffffff&textColor=94a3b8&iconColor=10b981&borderColor=10b981" alt="Spotify Live Status" width="400" />
+    <img src="https://lanyard.cnrad.dev/api/1092973630683619399?theme=dark&bg=0F0E0C&titleColor=E9E2CF&textColor=A29A85&iconColor=C9922B&borderColor=C9922B" width="46%" alt="Currently playing on Spotify" />
   </a>
 </p>
 
+<p align="center">
+  <sub>Full console — SOC simulator, live topology, the whole sleeve — at <a href="https://ranilojohn.github.io/Shizuphrenia/">ranilojohn.github.io/Shizuphrenia</a></sub>
+</p>

@@ -1,4 +1,4 @@
-// app.js - Latverian Cyber-Fortress Logic Engine
+// app.js - SHZ-001 // page logic: profile, tracklist, Lanyard player, SOC shift.
 
 document.addEventListener("DOMContentLoaded", () => {
   initProfile();
@@ -50,6 +50,9 @@ function initProfile() {
 /* ==========================================================================
    SKILLS TABS GENERATION & CONTROLLER
    ========================================================================== */
+// Sides of the record. Index-aligned with CONFIG.skills.
+const SIDES = ["A", "B", "C", "D", "E"];
+
 let activeCategory = "";
 
 function initSkills() {
@@ -66,7 +69,7 @@ function initSkills() {
       btn.classList.add("active");
       activeCategory = cat.category;
     }
-    btn.textContent = `[ ${cat.category.toUpperCase()} ]`;
+    btn.textContent = `${SIDES[index] || ""} · ${cat.category}`;
     btn.setAttribute("data-category", cat.category);
     btn.addEventListener("click", (e) => {
       // Toggle Active Tab Style
@@ -105,13 +108,12 @@ function renderSkillsForCategory(categoryName) {
       node.classList.add("skill-node");
       node.style.animation = `slide-in 0.3s ease-out ${index * 0.05}s forwards`;
       
+      const side = SIDES[CONFIG.skills.indexOf(categoryData)] || "A";
       node.innerHTML = `
-        <div class="node-header">
-          <span class="node-title">${skill.name}</span>
-          <span class="node-meta">NODE_0${index + 1}</span>
-        </div>
+        <div class="node-header">${side}${index + 1}</div>
         <div class="node-body">
-          ${skill.details}
+          <p class="node-title">${skill.name}</p>
+          <p class="node-meta">${skill.details}</p>
         </div>
       `;
       container.appendChild(node);
@@ -493,8 +495,8 @@ function startSOCDefense() {
   systemIntegrity = 100;
   
   const cmdBtn = document.getElementById("terminal-game-btn");
-  cmdBtn.textContent = "SCANNING NETGRID...";
-  cmdBtn.className = "terminal-btn btn-glowing";
+  cmdBtn.textContent = "Monitoring";
+  cmdBtn.className = "terminal-btn";
   
   document.getElementById("blocked-count").textContent = "0";
   const integrityEl = document.getElementById("system-integrity");
@@ -504,8 +506,8 @@ function startSOCDefense() {
   document.getElementById("game-status-bar").classList.remove("hidden");
   
   const screen = document.getElementById("terminal-output");
-  screen.innerHTML = `<p class="sys-msg text-success">[SOC MONITORS BOOTED - DOOM DETECTOR v9.4]</p>
-  <p class="sys-msg">[Grid perimeter set to defensive hold...]</p>`;
+  screen.innerHTML = `<p class="sys-msg text-success">shift started, sensors live</p>
+  <p class="sys-msg">watching 10.0.0.0/24 &#8212; block the source before the timer runs out</p>`;
   
   // Start threat spawner
   gameInterval = setInterval(spawnThreat, 3000);
@@ -532,10 +534,9 @@ function spawnThreat() {
     const log = document.createElement("div");
     log.className = "threat-log";
     log.innerHTML = `
-      <p class="text-alert">!!! CRITICAL ALERT !!!</p>
+      <p class="text-alert font-bold">ALERT &#8212; ${threat.name}</p>
       <p class="sys-msg">${threat.msg}</p>
-      <p class="sys-msg">SOURCE IP: <strong class="text-alert">${fakeIP}</strong></p>
-      <p class="sys-msg">SEVERITY RISK: ${threat.risk}%</p>
+      <p class="sys-msg">source <strong class="text-alert">${fakeIP}</strong> &#183; impact if missed: ${threat.risk}%</p>
     `;
     screen.appendChild(log);
     screen.scrollTop = screen.scrollHeight;
@@ -545,8 +546,8 @@ function spawnThreat() {
     
     // Update button to action button
     const cmdBtn = document.getElementById("terminal-game-btn");
-    cmdBtn.textContent = `BLOCK IP: ${fakeIP}`;
-    cmdBtn.className = "terminal-btn btn-glowing btn-alert";
+    cmdBtn.textContent = `Block ${fakeIP}`;
+    cmdBtn.className = "terminal-btn btn-alert";
     
     // Threat countdown (user has 2.2 seconds to block)
     threatTimer = setTimeout(() => {
@@ -611,7 +612,7 @@ function blockActiveThreat() {
   // Visual block feedback in logs
   const blockMsg = document.createElement("p");
   blockMsg.className = "text-success";
-  blockMsg.textContent = `[PORTWALL SHIELD] Successfully deployed Wazuh rules. Blocked IP: ${currentThreatIP}`;
+  blockMsg.textContent = `rule pushed — ${currentThreatIP} dropped at the edge`;
   screen.appendChild(blockMsg);
   screen.scrollTop = screen.scrollHeight;
   
@@ -633,8 +634,8 @@ function clearActiveThreatState() {
   threatTimer = null;
   
   const cmdBtn = document.getElementById("terminal-game-btn");
-  cmdBtn.textContent = "SCANNING NETGRID...";
-  cmdBtn.className = "terminal-btn btn-glowing";
+  cmdBtn.textContent = "Monitoring";
+  cmdBtn.className = "terminal-btn";
 }
 
 function triggerSystemCollapse() {
@@ -646,15 +647,14 @@ function triggerSystemCollapse() {
   
   const screen = document.getElementById("terminal-output");
   screen.innerHTML = `
-    <h3 class="text-alert font-bold">!!! COLD SHUTDOWN COMPROMISED !!!</h3>
-    <p class="text-alert">Latverian server core corrupted. Core integrity at 0%.</p>
-    <p class="sys-msg">DOOMBOT RECLAMATION INITIATED...</p>
-    <p class="sys-msg">// Reboot command console required.</p>
+    <h3 class="text-alert font-bold">Perimeter lost</h3>
+    <p class="sys-msg">Integrity hit zero. Everything downstream is untrusted now.</p>
+    <p class="sys-msg">Rebuild from a known-good image and start the shift again.</p>
   `;
   screen.scrollTop = screen.scrollHeight;
   
   const cmdBtn = document.getElementById("terminal-game-btn");
-  cmdBtn.textContent = "REBOOT MAIN CORE";
+  cmdBtn.textContent = "Rebuild";
   cmdBtn.className = "terminal-btn btn-alert";
 }
 
@@ -665,15 +665,14 @@ function triggerSystemVictory() {
   
   const screen = document.getElementById("terminal-output");
   screen.innerHTML = `
-    <h3 class="text-success font-bold">=== SECURITY PERIMETER SECURED ===</h3>
-    <p class="sys-msg">Defended 10 intrusions. Systems stabilized. Intruder packets dropped.</p>
-    <p class="text-success">"No one compromises Doctor Doom's mainframe. Latveria prevails."</p>
-    <p class="sys-msg">// Network Command Center standing by.</p>
+    <h3 class="text-success font-bold">Shift clean</h3>
+    <p class="sys-msg">Ten intrusions caught, none landed. Integrity held at ${systemIntegrity}%.</p>
+    <p class="text-success">Watch everybody. Say nothing. Know the network.</p>
   `;
   screen.scrollTop = screen.scrollHeight;
   
   const cmdBtn = document.getElementById("terminal-game-btn");
-  cmdBtn.textContent = "SYSTEM STABLE - RESTART";
+  cmdBtn.textContent = "Run it back";
   cmdBtn.className = "terminal-btn";
 }
 

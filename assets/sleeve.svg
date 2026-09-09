@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Shizuphrenia — Operation Doomsday. Security operations and network engineering.">
+  <title>SHIZUPHRENIA // OPERATION: DOOMSDAY</title>
+
+  <defs>
+    <!-- halftone: print dots, the crate-dug sleeve texture -->
+    <pattern id="halftone" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.05" fill="#C9922B"/>
+    </pattern>
+    <linearGradient id="halftoneFade" x1="0" y1="0" x2="1" y2="0.6">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.20"/>
+      <stop offset="55%" stop-color="#fff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="halftoneMask"><rect width="1200" height="380" fill="url(#halftoneFade)"/></mask>
+
+    <!-- brass plate on the faceplate -->
+    <linearGradient id="plate" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#3A3122"/>
+      <stop offset="45%" stop-color="#241F16"/>
+      <stop offset="100%" stop-color="#14110C"/>
+    </linearGradient>
+
+    <path id="maskOuter" d="M 70 122 C 100 96, 250 96, 280 122 L 288 208 C 288 264, 252 308, 208 331 L 175 345 L 142 331 C 98 308, 62 264, 62 208 Z"/>
+    <clipPath id="maskClip"><use href="#maskOuter"/></clipPath>
+  </defs>
+
+  <!-- ground -->
+  <rect width="1200" height="380" fill="#0F0E0C"/>
+  <rect width="1200" height="380" fill="url(#halftone)" mask="url(#halftoneMask)"/>
+
+  <!-- ============ LEFT: THE MASK IS A NETWORK ============ -->
+  <g>
+    <use href="#maskOuter" fill="url(#plate)" stroke="#C9922B" stroke-width="2.5"/>
+
+    <!-- topology living inside the faceplate -->
+    <g clip-path="url(#maskClip)" stroke="#C9922B" fill="#C9922B">
+      <g stroke-width="1" opacity="0.30" fill="none">
+        <path d="M92 150 L146 186 L118 246 L92 150 M146 186 L204 168 L258 202 L232 268 L166 288 L118 246 M204 168 L212 118 M258 202 L292 164 M166 288 L175 340 M232 268 L286 292 M118 246 L74 268 M92 150 L60 186"/>
+      </g>
+      <g opacity="0.55">
+        <circle cx="92" cy="150" r="2.6"/><circle cx="146" cy="186" r="2.6"/>
+        <circle cx="118" cy="246" r="2.6"/><circle cx="204" cy="168" r="2.6"/>
+        <circle cx="258" cy="202" r="2.6"/><circle cx="232" cy="268" r="2.6"/>
+        <circle cx="166" cy="288" r="2.6"/><circle cx="212" cy="118" r="2"/>
+        <circle cx="292" cy="164" r="2"/><circle cx="286" cy="292" r="2"/>
+        <circle cx="74" cy="268" r="2"/>
+      </g>
+      <!-- packets in transit -->
+      <circle r="3.2" fill="#E9E2CF">
+        <animateMotion dur="4.2s" repeatCount="indefinite" path="M92 150 L146 186 L204 168 L258 202 L232 268 L166 288 L118 246 L92 150"/>
+      </circle>
+      <circle r="2.4" fill="#C9922B">
+        <animateMotion dur="6.5s" begin="1.4s" repeatCount="indefinite" path="M258 202 L232 268 L166 288 L118 246 L146 186 L204 168 L258 202"/>
+      </circle>
+    </g>
+
+    <!-- brow band + rivets -->
+    <g clip-path="url(#maskClip)">
+      <rect x="55" y="120" width="240" height="30" fill="#0F0E0C" opacity="0.55"/>
+      <path d="M62 150 L290 150" stroke="#C9922B" stroke-width="2"/>
+      <g fill="#C9922B" opacity="0.85">
+        <circle cx="86" cy="135" r="3.2"/><circle cx="116" cy="130" r="3.2"/>
+        <circle cx="146" cy="127" r="3.2"/><circle cx="176" cy="126" r="3.2"/>
+        <circle cx="206" cy="127" r="3.2"/><circle cx="236" cy="130" r="3.2"/>
+        <circle cx="266" cy="135" r="3.2"/>
+      </g>
+    </g>
+
+    <!-- eye slits -->
+    <g clip-path="url(#maskClip)">
+      <polygon points="100,197 154,177 158,205 104,216" fill="#0A0907" stroke="#C9922B" stroke-width="2"/>
+      <polygon points="250,197 196,177 192,205 246,216" fill="#0A0907" stroke="#C9922B" stroke-width="2"/>
+      <rect x="112" y="192" width="34" height="3" fill="#E9E2CF" opacity="0.75">
+        <animate attributeName="opacity" values="0.75;0.2;0.75" dur="3.6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="204" y="192" width="34" height="3" fill="#E9E2CF" opacity="0.75">
+        <animate attributeName="opacity" values="0.75;0.2;0.75" dur="3.6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- centre ridge + mouth grate -->
+    <g clip-path="url(#maskClip)" stroke="#C9922B" stroke-width="2" fill="none">
+      <path d="M168 178 L166 250 M182 178 L184 250"/>
+      <path d="M128 262 L222 262 M126 272 L224 272 M128 282 L222 282 M132 292 L218 292"/>
+      <path d="M120 226 C 96 240, 84 262, 82 288 M230 226 C 254 240, 266 262, 268 288" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- ============ RIGHT: THE TYPE ============ -->
+  <g font-family="Impact, Haettenschweiler, 'Arial Narrow', 'Franklin Gothic Bold', sans-serif">
+    <!-- off-register misprint ghost, then the plate -->
+    <text x="365" y="168" font-size="104" letter-spacing="1" fill="#A93B26" opacity="0.55">SHIZUPHRENIA</text>
+    <text x="362" y="165" font-size="104" letter-spacing="1" fill="#C9922B" opacity="0.9">SHIZUPHRENIA</text>
+    <text x="359" y="162" font-size="104" letter-spacing="1" fill="#E9E2CF">SHIZUPHRENIA</text>
+  </g>
+
+  <g font-family="'Courier New', Courier, monospace">
+    <path d="M361 186 L1140 186" stroke="#C9922B" stroke-width="2"/>
+    <path d="M361 192 L1140 192" stroke="#C9922B" stroke-width="1" opacity="0.4"/>
+
+    <text x="361" y="219" font-size="17" letter-spacing="3.2" fill="#A29A85">RANILO JOHN &#183; SECURITY OPERATIONS &#183; NETWORK ENGINEERING</text>
+    <text x="361" y="243" font-size="13" letter-spacing="2.4" fill="#7C7A72">REMEMBER ALL CAPS WHEN YOU SPELL THE MAN NAME</text>
+
+    <!-- rubber stamps -->
+    <g font-size="12" letter-spacing="2">
+      <g transform="translate(361,262) rotate(-1.1)">
+        <rect width="176" height="28" fill="none" stroke="#C9922B" stroke-width="1.5"/>
+        <text x="13" y="19" fill="#C9922B">WAZUH / SURICATA</text>
+      </g>
+      <g transform="translate(551,262) rotate(0.8)">
+        <rect width="140" height="28" fill="none" stroke="#C9922B" stroke-width="1.5"/>
+        <text x="13" y="19" fill="#C9922B">CISCO / GNS3</text>
+      </g>
+      <g transform="translate(705,262) rotate(-0.6)">
+        <rect width="160" height="28" fill="none" stroke="#C9922B" stroke-width="1.5"/>
+        <text x="13" y="19" fill="#C9922B">PYTHON / LINUX</text>
+      </g>
+    </g>
+
+    <!-- the sample: a real IPv4 + TCP SYN header, dug out of a capture -->
+    <text x="361" y="325" font-size="12.5" letter-spacing="1.1" fill="#7C7A72" opacity="0.72">0000   45 00 00 3c 1c 46 40 00 40 06 b1 e6 c0 a8 00 68</text>
+    <text x="361" y="343" font-size="12.5" letter-spacing="1.1" fill="#7C7A72" opacity="0.5">0010   c0 a8 00 01 9e 24 01 bb 9d 3c 2f 11 00 00 00 00</text>
+  </g>
+
+  <!-- SIDE A stamp -->
+  <g transform="translate(1058,44) rotate(-4)" font-family="'Courier New', Courier, monospace">
+    <rect width="82" height="54" fill="none" stroke="#A93B26" stroke-width="2"/>
+    <text x="13" y="21" font-size="12" letter-spacing="3" fill="#A93B26">SIDE</text>
+    <text x="34" y="45" font-size="22" letter-spacing="1" fill="#A93B26">A</text>
+  </g>
+
+  <!-- sleeve trim -->
+  <rect x="6" y="6" width="1188" height="368" fill="none" stroke="#2A2519" stroke-width="2"/>
+</svg>
