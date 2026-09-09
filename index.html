@@ -5,56 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark">
 
-  <title>SHIZUPHRENIA // OPERATION: DOOMSDAY</title>
+  <title>SHIZUPHRENIA // SECURITY OPERATIONS TERMINAL</title>
   <meta name="description" content="Ranilo John (Shizuphrenia) — security operations and network engineering. Wazuh, Suricata, Cisco, GNS3, Python.">
   <meta name="author" content="Ranilo John">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="SHIZUPHRENIA // OPERATION: DOOMSDAY">
+  <meta property="og:title" content="SHIZUPHRENIA // SECURITY OPERATIONS TERMINAL">
   <meta property="og:description" content="Security operations and network engineering. Remember all caps when you spell the man name.">
-  <meta property="og:image" content="assets/sleeve.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="grain" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="glow-bg" aria-hidden="true"></div>
 
-  <div class="sleeve">
+  <div class="console">
 
-    <!-- ================= JACKET ================= -->
-    <header class="jacket">
-      <div class="side-stamp" aria-hidden="true">SIDE<b>A</b></div>
-
-      <div class="catalog-strip">
-        <span>SHZ&#8211;001 &#183; DOOMSDAY PRESSING</span>
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="top-bar">
+        <span>SYS: SHIZUPHRENIA_CORE &#183; BOOT OK</span>
         <div class="system-status">
-          <span class="status-item"><span class="label">THREAT</span> <span class="val security-low">NOMINAL</span></span>
+          <span class="status-item"><span class="pulse-indicator"></span><span class="label">THREAT</span> <span class="val">NOMINAL</span></span>
           <span class="status-item"><span class="label">TUNNEL</span> <span class="val">ESTABLISHED</span></span>
           <span class="status-item"><span class="label">UPTIME</span> <span id="uptime" class="val">99.9800%</span></span>
         </div>
       </div>
 
-      <h1 class="wordmark">Shizuphrenia</h1>
-      <p class="wordmark-sub">Ranilo John &#183; Security Operations &#183; Network Engineering</p>
-      <p class="wordmark-note">Remember all caps when you spell the man name</p>
+      <div class="ascii-hero-wrap">
+        <pre class="ascii-hero" role="img" aria-label="SHIZUPHRENIA, rendered as block-letter ASCII art">
++======================================================================================+
+|                                                                                      |
+|    _____ _    _ _____ _______    _ _____  _    _ _____  ______ _   _ _____           |
+|   / ____| |  | |_   _|___  / |  | |  __ \| |  | |  __ \|  ____| \ | |_   _|   /\     |
+|  | (___ | |__| | | |    / /| |  | | |__) | |__| | |__) | |__  |  \| | | |    /  \    |
+|   \___ \|  __  | | |   / / | |  | |  ___/|  __  |  _  /|  __| | . ` | | |   / /\ \   |
+|   ____) | |  | |_| |_ / /__| |__| | |    | |  | | | \ \| |____| |\  |_| |_ / ____ \  |
+|  |_____/|_|  |_|_____/_____|\____/|_|    |_|  |_|_|  \_\______|_| \_|_____/_/    \_\ |
+|                                                                                      |
+|                            RANILO JOHN  //  SHIZUPHRENIA                             |
+|                     SECURITY OPERATIONS  ·  NETWORK ENGINEERING                      |
+|                                                                                      |
++--------------------------------------------------------------------------------------+
+|                                                                                      |
+|   STATUS    : ACTIVE           THREAT  : NOMINAL          UPTIME : 99.98%            |
+|   DEFENSE   : WAZUH . SURICATA . WIRESHARK                                           |
+|   NETWORK   : CISCO IOS . VLAN . OSPF . STP . GNS3                                   |
+|   BUILD     : PYTHON . JAVA . LINUX                                                  |
+|                                                                                      |
+|                   "Remember all caps when you spell the man name."                   |
+|                                                                                      |
++======================================================================================+</pre>
+      </div>
 
-      <div class="stamps">
-        <span class="stamp">Wazuh</span>
-        <span class="stamp">Suricata</span>
-        <span class="stamp">Wireshark</span>
-        <span class="stamp">Cisco IOS</span>
-        <span class="stamp">GNS3</span>
-        <span class="stamp">Python</span>
-        <span class="stamp">Linux</span>
+      <div class="tag-row">
+        <span class="tag">Wazuh</span>
+        <span class="tag">Suricata</span>
+        <span class="tag">Wireshark</span>
+        <span class="tag">Cisco IOS</span>
+        <span class="tag">GNS3</span>
+        <span class="tag">Python</span>
+        <span class="tag">Linux</span>
       </div>
     </header>
 
-    <!-- ================= SPREAD ================= -->
+    <!-- ================= MAIN GRID ================= -->
     <main class="spread">
 
       <!-- ---------- left ---------- -->
@@ -64,8 +84,8 @@
         <article class="card">
           <div class="card-header">
             <div class="header-indicator">
-              <span class="brackets">A1</span>
-              <h3>Artist</h3>
+              <span class="brackets">[//]</span>
+              <h3>Operator</h3>
             </div>
             <span class="status-item"><span class="pulse-indicator"></span><span class="label">On the floor</span></span>
           </div>
@@ -76,21 +96,21 @@
               <svg viewBox="52 90 246 264" class="doom-svg" id="doom-mask-svg" role="img" aria-label="Metal mask drawn as a network topology">
                 <defs>
                   <linearGradient id="plate" x1="0" y1="0" x2="0.6" y2="1">
-                    <stop offset="0%" stop-color="#3A3122"/>
-                    <stop offset="45%" stop-color="#241F16"/>
-                    <stop offset="100%" stop-color="#14110C"/>
+                    <stop offset="0%" stop-color="#233229"/>
+                    <stop offset="45%" stop-color="#141C17"/>
+                    <stop offset="100%" stop-color="#0A0F0C"/>
                   </linearGradient>
                   <path id="faceplate" d="M 70 122 C 100 96, 250 96, 280 122 L 288 208 C 288 264, 252 308, 208 331 L 175 345 L 142 331 C 98 308, 62 264, 62 208 Z"/>
                   <clipPath id="faceclip"><use href="#faceplate"/></clipPath>
                 </defs>
 
-                <use href="#faceplate" fill="url(#plate)" stroke="#C9922B" stroke-width="2.5"/>
+                <use href="#faceplate" fill="url(#plate)" stroke="#10B981" stroke-width="2.5"/>
 
                 <g clip-path="url(#faceclip)">
-                  <g stroke="#C9922B" stroke-width="1" opacity="0.3" fill="none">
+                  <g stroke="#10B981" stroke-width="1" opacity="0.3" fill="none">
                     <path d="M92 150 L146 186 L118 246 L92 150 M146 186 L204 168 L258 202 L232 268 L166 288 L118 246 M204 168 L212 118 M258 202 L292 164 M166 288 L175 340 M232 268 L286 292 M118 246 L74 268 M92 150 L60 186"/>
                   </g>
-                  <g fill="#C9922B" opacity="0.55">
+                  <g fill="#10B981" opacity="0.55">
                     <circle cx="92" cy="150" r="2.6"/><circle cx="146" cy="186" r="2.6"/>
                     <circle cx="118" cy="246" r="2.6"/><circle cx="204" cy="168" r="2.6"/>
                     <circle cx="258" cy="202" r="2.6"/><circle cx="232" cy="268" r="2.6"/>
@@ -98,17 +118,17 @@
                     <circle cx="292" cy="164" r="2"/><circle cx="286" cy="292" r="2"/>
                     <circle cx="74" cy="268" r="2"/>
                   </g>
-                  <circle r="3.2" fill="#E9E2CF">
+                  <circle r="3.2" fill="#E9F5EE">
                     <animateMotion dur="4.2s" repeatCount="indefinite" path="M92 150 L146 186 L204 168 L258 202 L232 268 L166 288 L118 246 L92 150"/>
                   </circle>
-                  <circle r="2.4" fill="#C9922B">
+                  <circle r="2.4" fill="#10B981">
                     <animateMotion dur="6.5s" begin="1.4s" repeatCount="indefinite" path="M258 202 L232 268 L166 288 L118 246 L146 186 L204 168 L258 202"/>
                   </circle>
 
                   <!-- brow band -->
-                  <rect x="55" y="120" width="240" height="30" fill="#0F0E0C" opacity="0.55"/>
-                  <path d="M62 150 L290 150" stroke="#C9922B" stroke-width="2"/>
-                  <g fill="#C9922B" opacity="0.85">
+                  <rect x="55" y="120" width="240" height="30" fill="#070A08" opacity="0.55"/>
+                  <path d="M62 150 L290 150" stroke="#10B981" stroke-width="2"/>
+                  <g fill="#10B981" opacity="0.85">
                     <circle cx="86" cy="135" r="3.2"/><circle cx="116" cy="130" r="3.2"/>
                     <circle cx="146" cy="127" r="3.2"/><circle cx="176" cy="126" r="3.2"/>
                     <circle cx="206" cy="127" r="3.2"/><circle cx="236" cy="130" r="3.2"/>
@@ -116,17 +136,17 @@
                   </g>
 
                   <!-- eyes -->
-                  <polygon points="100,197 154,177 158,205 104,216" fill="#0A0907" stroke="#C9922B" stroke-width="2"/>
-                  <polygon points="250,197 196,177 192,205 246,216" fill="#0A0907" stroke="#C9922B" stroke-width="2"/>
-                  <rect x="112" y="192" width="34" height="3" fill="#E9E2CF" opacity="0.75">
+                  <polygon points="100,197 154,177 158,205 104,216" fill="#050705" stroke="#10B981" stroke-width="2"/>
+                  <polygon points="250,197 196,177 192,205 246,216" fill="#050705" stroke="#10B981" stroke-width="2"/>
+                  <rect x="112" y="192" width="34" height="3" fill="#E9F5EE" opacity="0.75">
                     <animate attributeName="opacity" values="0.75;0.2;0.75" dur="3.6s" repeatCount="indefinite"/>
                   </rect>
-                  <rect x="204" y="192" width="34" height="3" fill="#E9E2CF" opacity="0.75">
+                  <rect x="204" y="192" width="34" height="3" fill="#E9F5EE" opacity="0.75">
                     <animate attributeName="opacity" values="0.75;0.2;0.75" dur="3.6s" repeatCount="indefinite"/>
                   </rect>
 
                   <!-- ridge, grate, cheek seams -->
-                  <g stroke="#C9922B" stroke-width="2" fill="none">
+                  <g stroke="#10B981" stroke-width="2" fill="none">
                     <path d="M168 178 L166 250 M182 178 L184 250"/>
                     <path d="M128 262 L222 262 M126 272 L224 272 M128 282 L222 282 M132 292 L218 292"/>
                     <path d="M120 226 C 96 240, 84 262, 82 288 M230 226 C 254 240, 266 262, 268 288" opacity="0.5"/>
@@ -184,30 +204,30 @@
       <!-- ---------- right ---------- -->
       <section class="panel">
 
-        <!-- tracklist -->
+        <!-- skills matrix -->
         <article class="card">
           <div class="card-header">
             <div class="header-indicator">
-              <span class="brackets">B1</span>
-              <h3>Tracklist</h3>
+              <span class="brackets">[//]</span>
+              <h3>Skills_Matrix.db</h3>
             </div>
             <div class="skill-tabs" id="skill-tabs-nav"></div>
           </div>
           <div class="card-body">
             <div class="skills-grid" id="skills-grid-container">
-              <p class="loading-text">Cueing up&#8230;</p>
+              <p class="loading-text">Decrypting nodes&#8230;</p>
             </div>
           </div>
         </article>
 
-        <!-- now spinning -->
+        <!-- Spotify -->
         <article class="spotify-card">
           <div class="spotify-header">
             <div class="spotify-icon-container">
               <svg class="spotify-logo-svg" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill="#C9922B" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.893-.98-.336.075-.67-.136-.746-.472-.076-.336.136-.67.472-.746 3.856-.88 7.15-.506 9.822 1.13.295.178.387.563.207.86zm1.225-2.72c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.075-1.182-.413.125-.845-.107-.97-.52-.125-.413.107-.847.52-.97 3.665-1.11 8.234-.57 11.34 1.34.367.227.487.708.26 1.073zm.105-2.822c-.273.447-.857.595-1.304.32-3.176-1.896-8.407-2.07-11.454-1.144-.51.154-1.045-.137-1.2-.647-.154-.51.137-1.045.647-1.2 3.626-1.1 9.4-1.002 13.067 1.18.447.268.595.85.322 1.304z"/>
+                <path fill="#10B981" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.893-.98-.336.075-.67-.136-.746-.472-.076-.336.136-.67.472-.746 3.856-.88 7.15-.506 9.822 1.13.295.178.387.563.207.86zm1.225-2.72c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.075-1.182-.413.125-.845-.107-.97-.52-.125-.413.107-.847.52-.97 3.665-1.11 8.234-.57 11.34 1.34.367.227.487.708.26 1.073zm.105-2.822c-.273.447-.857.595-1.304.32-3.176-1.896-8.407-2.07-11.454-1.144-.51.154-1.045-.137-1.2-.647-.154-.51.137-1.045.647-1.2 3.626-1.1 9.4-1.002 13.067 1.18.447.268.595.85.322 1.304z"/>
               </svg>
-              <span class="widget-label">Now spinning</span>
+              <span class="widget-label">Live_broadcast: Spotify</span>
             </div>
             <div id="spotify-presence-indicator" class="presence-indicator offline">
               <span class="presence-dot"></span>
@@ -260,32 +280,32 @@
           </div>
 
           <div class="spotify-footer">
-            <span class="spotify-notice">Live off Discord via Lanyard. Falls back to the crate when the man is offline.</span>
+            <span class="spotify-notice">Live off Discord via Lanyard. Falls back to the crate when offline.</span>
           </div>
         </article>
 
       </section>
     </main>
 
-    <!-- ================= THE CRATE ================= -->
+    <!-- ================= CONTRIBUTIONS ================= -->
     <section class="activity-section">
       <article class="activity-card">
         <div class="card-header">
           <div class="header-indicator">
-            <span class="brackets">C1</span>
-            <h3>The crate</h3>
+            <span class="brackets">[//]</span>
+            <h3>Grid_contributions.sys</h3>
           </div>
           <span class="status-item"><span class="pulse-indicator"></span><span class="label">Pulled live from GitHub</span></span>
         </div>
         <div class="card-body">
-          <img src="https://ghchart.rshah.org/c9922b/RaniloJohn" alt="A year of contributions by RaniloJohn" class="github-graph-img" loading="lazy" />
+          <img src="https://ghchart.rshah.org/10b981/RaniloJohn" alt="A year of contributions by RaniloJohn" class="github-graph-img" loading="lazy" />
           <p class="github-graph-note">A year of digging, one square a day</p>
         </div>
       </article>
     </section>
 
     <footer class="sleeve-footer">
-      <span>SHZ&#8211;001 &#183; Pressed 2026 &#183; Ranilo John</span>
+      <span>SHZ&#8211;001 &#183; Ranilo John &#183; 2026</span>
       <span>All caps, no exceptions</span>
     </footer>
   </div>

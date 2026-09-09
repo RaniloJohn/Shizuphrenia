@@ -50,9 +50,6 @@ function initProfile() {
 /* ==========================================================================
    SKILLS TABS GENERATION & CONTROLLER
    ========================================================================== */
-// Sides of the record. Index-aligned with CONFIG.skills.
-const SIDES = ["A", "B", "C", "D", "E"];
-
 let activeCategory = "";
 
 function initSkills() {
@@ -69,7 +66,7 @@ function initSkills() {
       btn.classList.add("active");
       activeCategory = cat.category;
     }
-    btn.textContent = `${SIDES[index] || ""} · ${cat.category}`;
+    btn.textContent = `[ ${cat.category.toUpperCase()} ]`;
     btn.setAttribute("data-category", cat.category);
     btn.addEventListener("click", (e) => {
       // Toggle Active Tab Style
@@ -108,9 +105,8 @@ function renderSkillsForCategory(categoryName) {
       node.classList.add("skill-node");
       node.style.animation = `slide-in 0.3s ease-out ${index * 0.05}s forwards`;
       
-      const side = SIDES[CONFIG.skills.indexOf(categoryData)] || "A";
       node.innerHTML = `
-        <div class="node-header">${side}${index + 1}</div>
+        <div class="node-header">NODE_0${index + 1}</div>
         <div class="node-body">
           <p class="node-title">${skill.name}</p>
           <p class="node-meta">${skill.details}</p>
